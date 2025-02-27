@@ -12,3 +12,4 @@
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.pdb
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.genruntimeconfig.cache
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/ref/CLI-RentingService.dll
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.sourcelink.json

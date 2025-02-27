@@ -102,3 +102,4 @@
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService.Tests/obj/Debug/net8.0/CLI-RentingService.Tests.pdb
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService.Tests/obj/Debug/net8.0/CLI-RentingService.Tests.genruntimeconfig.cache
 /home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService.Tests/obj/Debug/net8.0/ref/CLI-RentingService.Tests.dll
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService.Tests/obj/Debug/net8.0/CLI-RentingService.Tests.sourcelink.json
