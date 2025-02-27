@@ -1,0 +1,14 @@
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/bin/Debug/net8.0/CLI-RentingService
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/bin/Debug/net8.0/CLI-RentingService.deps.json
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/bin/Debug/net8.0/CLI-RentingService.runtimeconfig.json
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/bin/Debug/net8.0/CLI-RentingService.dll
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/bin/Debug/net8.0/CLI-RentingService.pdb
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.GeneratedMSBuildEditorConfig.editorconfig
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.AssemblyInfoInputs.cache
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.AssemblyInfo.cs
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.csproj.CoreCompileInputs.cache
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.dll
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/refint/CLI-RentingService.dll
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.pdb
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/CLI-RentingService.genruntimeconfig.cache
+/home/skn/coding-projects/backend/CLI-renting-service/CLI-RentingService/obj/Debug/net8.0/ref/CLI-RentingService.dll
