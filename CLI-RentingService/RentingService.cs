@@ -24,7 +24,9 @@ public class RentingService{
         return bookInventory;
     }
 
-    public KeyValuePair<Book, int>? CheckAvailability(String title){
+    public KeyValuePair<Book, int>? CheckAvailability(String? title){
+        if(String.IsNullOrEmpty(title)){return null;}
+        
         KeyValuePair<Book, int> bookKey = bookInventory.FirstOrDefault(entry => entry.Key.Title.ToLower() == title.ToLower());
 
         if (bookKey.Equals(default(KeyValuePair<Book, int>))){
