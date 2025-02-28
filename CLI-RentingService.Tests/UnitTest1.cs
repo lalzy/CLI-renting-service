@@ -26,7 +26,7 @@ public class UnitTest1
       int amount = 2;
 
       RentingService rs = new RentingService();
-      rs.addBook(bookTitle, author, amount);
+      rs.AddBook(bookTitle, author, amount);
 
       KeyValuePair<Book, int>? newBook = rs.CheckAvailability(bookTitle);
       Assert.NotNull(newBook);
@@ -77,10 +77,10 @@ public class UnitTest1
       int bookCount = GetBookCount(rs, bookTitle);
 
       for(int i = 0; i < bookCount ; i++){
-        rs.rentBook(bookTitle);
+        rs.RentBook(bookTitle);
       }
 
-      var ret = rs.rentBook(bookTitle);
+      var ret = rs.RentBook(bookTitle);
       Assert.Null(ret);
     } 
 
@@ -92,7 +92,7 @@ public class UnitTest1
       string bookTitle = "foundation";
       RentingService rs = new RentingService();
       int preBorrowCount = GetBookCount(rs, bookTitle);
-      var ret = rs.rentBook(bookTitle);
+      var ret = rs.RentBook(bookTitle);
       Assert.NotNull(ret);
 
       int postBorrowCount = GetBookCount(rs, bookTitle);
@@ -106,11 +106,11 @@ public class UnitTest1
     [Fact]
     public void RentNonExistentBook(){
       RentingService rs = new RentingService();
-      var ret = rs.rentBook(null);
+      var ret = rs.RentBook(null);
       Assert.Null(ret);
 
       string bookTitle = "--doesn'tactuallyexisthere--";
-      ret = rs.rentBook(bookTitle);
+      ret = rs.RentBook(bookTitle);
       Assert.Null(ret);
     }
 
@@ -121,11 +121,11 @@ public class UnitTest1
     [InlineData("harry PottEr")]
     [InlineData("foundation")]
     [Theory]
-    public void returningBook(string bookTitle){
+    public void ReturningBook(string bookTitle){
       RentingService rs = new RentingService();
       int preBorrow = GetBookCount(rs, bookTitle);
 
-      BorrowReceipt? br = rs.rentBook(bookTitle);
+      BorrowReceipt? br = rs.RentBook(bookTitle);
       Assert.NotNull(br);
 
       var ret = rs.ReturnBook(bookTitle, br.BorrowDate);

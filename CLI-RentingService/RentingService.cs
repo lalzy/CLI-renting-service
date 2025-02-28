@@ -16,7 +16,7 @@ public class RentingService{
     } 
 
 
-    public void addBook (String title, String author, int amount = 1){
+    public void AddBook (String title, String author, int amount = 1){
         bookInventory.Add(new Book(title, author), amount);
     }
 
@@ -26,7 +26,7 @@ public class RentingService{
 
     public KeyValuePair<Book, int>? CheckAvailability(String? title){
         if(String.IsNullOrEmpty(title)){return null;}
-        
+
         KeyValuePair<Book, int> bookKey = bookInventory.FirstOrDefault(entry => entry.Key.Title.ToLower() == title.ToLower());
 
         if (bookKey.Equals(default(KeyValuePair<Book, int>))){
@@ -49,7 +49,7 @@ public class RentingService{
     //     return false;
     // }
 
-    private void addToBorrowed(Book book){
+    private void AddToBorrowed(Book book){
         KeyValuePair<Book, int> borrowedBook = currentlyBorrowed.FirstOrDefault(
             entry=> entry.Key.Title.Equals(book.Title, StringComparison.OrdinalIgnoreCase));
         
@@ -60,7 +60,7 @@ public class RentingService{
         }
     }
 
-    public BorrowReceipt? rentBook (String title){
+    public BorrowReceipt? RentBook (String title){
         KeyValuePair<Book, int>? bookKey = CheckAvailability(title);
 
         if(bookKey == null){
@@ -69,7 +69,7 @@ public class RentingService{
 
         Book book = bookKey.Value.Key;
         bookInventory[book]--;
-        addToBorrowed(book);
+        AddToBorrowed(book);
 
         return new BorrowReceipt(title);
 
