@@ -10,9 +10,9 @@ public class UnitTest1
     /// <param name="rs">RentingService instance</param>
     /// <param name="bookTitle">Title of the book</param>
     /// <returns></returns>
-    private int GetBookCount(RentingService rs, String bookTitle){
+    private int GetBookCount(RentingService rs, string bookTitle){
       return (from book in rs.ListAllBooks()
-          where book.Key.Title.ToLower() == bookTitle.ToLower()
+          where book.Key.Title.Equals(bookTitle, StringComparison.OrdinalIgnoreCase)
           select book.Value).FirstOrDefault();
     }
 
@@ -121,7 +121,7 @@ public class UnitTest1
     [InlineData("harry PottEr")]
     [InlineData("foundation")]
     [Theory]
-    public void returningBook(String bookTitle){
+    public void returningBook(string bookTitle){
       RentingService rs = new RentingService();
       int preBorrow = GetBookCount(rs, bookTitle);
 
